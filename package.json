@@ -1,5 +1,5 @@
 {
-  "name": "dogerelay",
+  "name": "travistest",
   "version": "1.0.0",
   "description": "",
   "directories": {
@@ -8,6 +8,7 @@
   "dependencies": {
     "bitcoin-proof": "2.0.0",
     "scryptsy": "^2.0.0",
+    "solc": "^0.4.21",
     "truffle-hdwallet-provider": "0.0.3"
   },
   "devDependencies": {},
@@ -16,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oscarguindzberg/dogerelay.git"
+    "url": "git+https://github.com/cat-j/travistest.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/oscarguindzberg/dogerelay/issues"
+    "url": "https://github.com/cat-j/travistest/issues"
   },
-  "homepage": "https://github.com/oscarguindzberg/dogerelay#readme"
+  "homepage": "https://github.com/cat-j/travistest#readme"
 }
