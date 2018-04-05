@@ -76,6 +76,12 @@ sudo apt-get install tmux
 
 #----------------------------------
 
+# install glibc
+
+sudo apt-get install libstdc++6
+
+#----------------------------------
+
 # install geth
 sudo apt-get install software-properties-common
 sudo add-apt-repository -y ppa:ethereum/ethereum
@@ -137,7 +143,7 @@ cd travistest
 npm install
 sudo npm install -g sequelize-cli
 sudo npm install -g truffle
-sudo npm install -g ganache
+sudo npm install -g ganache-cli
 
 # setup the dbs
 sequelize db:create

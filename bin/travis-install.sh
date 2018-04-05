@@ -12,7 +12,6 @@ echo > passfile
 
 npm cache verify
 npm install
-npm install -g ganache
 npm install -g ganache-cli
 npm install -g truffle
 

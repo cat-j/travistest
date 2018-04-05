@@ -18,7 +18,8 @@ set -e
 #check_node_version $NODE_VERSION
 #if [[ $? == 1 ]]; then echo "node version is too old. please use v.7.6.0 or newer." && exit 1; fi
 
-npm run ganache 2>&1 &
+npm install -g ganache-cli
+ganache-cli 2>&1 &
 npm run parity > ./parity-log 2>&1 &
 rm -rf build
 truffle compile
