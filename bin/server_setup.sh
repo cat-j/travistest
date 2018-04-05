@@ -10,7 +10,7 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
-USR="truebit"
+USR="travistest"
 adduser $USR
 usermod -aG sudo $USR
 # To automate above, need to allow $USR to run sudo without typing password
@@ -131,12 +131,13 @@ sudo apt-get install -y build-essential
 #----------------------------------
 
 # go through the README installation directions:
-cd scrypt-interactive
+cd travistest
 
 # install node modules
 npm install
 sudo npm install -g sequelize-cli
 sudo npm install -g truffle
+sudo npm install -g ganache
 
 # setup the dbs
 sequelize db:create
