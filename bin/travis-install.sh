@@ -12,7 +12,8 @@ echo > passfile
 
 npm cache verify
 npm install
-npm install -g ganache-cli truffle
+npm install -g ganache-cli
+npm install -g truffle
 
 ./parity --chain dev 2>&1 &
 
