@@ -23,7 +23,7 @@ npm run parity > ./parity-log 2>&1 &
 rm -rf build
 truffle compile
 truffle migrate --reset --network development
-npm run test
+truffle test
 sleep 10
 kill -9 $(lsof -t -i:8545)
 kill -9 $(lsof -t -i:4242)
