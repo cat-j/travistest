@@ -19,12 +19,11 @@ set -e
 #if [[ $? == 1 ]]; then echo "node version is too old. please use v.7.6.0 or newer." && exit 1; fi
 
 npm install -g ganache-cli
-ganache-cli 2>&1 &
-npm run parity > ./parity-log 2>&1 &
+ganache-cli 2>&1
 rm -rf build
 truffle compile
 truffle migrate --reset --network development
 truffle test
 sleep 10
 kill -9 $(lsof -t -i:8545)
-kill -9 $(lsof -t -i:4242)
+# kill -9 $(lsof -t -i:4242)

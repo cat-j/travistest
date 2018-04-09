@@ -1,1 +1,0 @@
-ganache-cli -m "$MNEMONIC" -l 8000000
