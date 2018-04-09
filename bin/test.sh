@@ -19,7 +19,6 @@ set -e
 #check_node_version $NODE_VERSION
 #if [[ $? == 1 ]]; then echo "node version is too old. please use v.7.6.0 or newer." && exit 1; fi
 
-npm install -g ganache-cli
 ganache-cli --gasLimit 4700000000000000 2> /dev/null 1> /dev/null &
 rm -rf build
 truffle compile
