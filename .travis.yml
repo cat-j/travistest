@@ -15,6 +15,7 @@ matrix:
       - sudo apt-get install gcc g++ libssl-dev libudev-dev pkg-config
       - curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
       - sudo apt-get install -y nodejs
+      - rm -rf node_modules
       # - npm i -g npm@5.6.0
 
 install:
